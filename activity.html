@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Bliss Bakery</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff8f3;
+    color: #442c2e;
+}
+
+header {
+    background: #7b263a;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(#0005, #0005),
+    url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=80")
+    center/cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e9a4a8;
+    color: #442c2e;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #7b263a;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #0001;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+}
+
+.price {
+    color: #a33d55;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.order {
+    display: inline-block;
+    background: #7b263a;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.offer {
+    background: #f8e0d8;
+}
+
+.custom {
+    background: #fff;
+}
+
+.contact {
+    background: #f5e8e1;
+}
+
+.contact p {
+    margin: 12px;
+}
+
+footer {
+    background: #7b263a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍰 Sweet Bliss</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h2>Freshly Baked Happiness</h2>
+        <p>Delicious cakes, pastries and cookies made with love.</p>
+        <a href="#cakes" class="btn">Explore Our Menu</a>
+    </div>
+</div>
+
+<section id="cakes">
+    <h2>🎂 Our Delicious Cakes</h2>
+    <p class="intro">Perfect cakes for every celebration.</p>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate and creamy frosting.</p>
+            <p class="price">₹650</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Strawberry dessert">
+            <h3>Strawberry Cake</h3>
+            <p>Fresh strawberry cream delight.</p>
+            <p class="price">₹750</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Birthday cake">
+            <h3>Birthday Cake</h3>
+            <p>Beautiful cakes for special days.</p>
+            <p class="price">₹900</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="pastries">
+    <h2>🥐 Pastries & Cookies</h2>
+    <p class="intro">Small treats, big happiness!</p>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Fresh croissants">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, buttery and freshly baked.</p>
+            <p class="price">₹90</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Chocolate cookies">
+            <h3>Chocolate Cookies</h3>
+            <p>Crispy cookies with chocolate chips.</p>
+            <p class="price">₹150 / pack</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Cupcakes">
+            <h3>Vanilla Cupcakes</h3>
+            <p>Soft cupcakes with creamy frosting.</p>
+            <p class="price">₹80 each</p>
+            <a href="#contact" class="order">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="offer" id="offers">
+    <h2>🎉 Seasonal Special Offer</h2>
+    <p>Make every celebration sweeter!</p>
+    <h3 style="margin: 15px;">Get 15% OFF on custom cakes</h3>
+    <p>Order your celebration cake in advance.</p>
+    <br>
+    <a href="#contact" class="order">Grab Your Offer</a>
+</section>
+
+<section class="custom">
+    <h2>🎨 Custom Cake Designs</h2>
+    <p class="intro">
+        Wedding cakes, birthday cakes, anniversary cakes
+        and personalized designs made just for you.
+    </p>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80" alt="Decorated celebration cake">
+            <h3>Wedding Cakes</h3>
+            <p>Elegant designs for your special day.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Decorated cupcakes">
+            <h3>Personalized Treats</h3>
+            <p>Your ideas, our delicious creations.</p>
+        </div>
+    </div>
+    <br>
+    <a href="#contact" class="order">Request a Custom Cake</a>
+</section>
+
+<section class="contact" id="contact">
+    <h2>📍 Visit Our Bakery</h2>
+    <p>📌 Address: Main Road, Your City</p>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>✉️ Email: sweetbliss@example.com</p>
+    <p>🕒 Opening Hours: 9:00 AM – 9:00 PM</p>
+    <br>
+    <a class="order"
+       href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20from%20Sweet%20Bliss%20Bakery"
+       target="_blank">
+       Order on WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Sweet Bliss Bakery | Baked with ❤️</p>
+</footer>
+
+</body>
+</html>

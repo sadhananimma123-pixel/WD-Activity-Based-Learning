@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        header {
+            background: #20124d;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav {
+            background: #382078;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #5927b5, #e83e8c);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .banner h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffcf40;
+            color: #222;
+            padding: 12px 22px;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #382078;
+            margin-bottom: 25px;
+        }
+
+        .events {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .card h3 {
+            color: #e83e8c;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 14px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #382078;
+            color: white;
+        }
+
+        form {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #20124d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .banner h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                margin: 6px;
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎉 COLLEGE FEST 2026</h1>
+        <p>Innovation • Creativity • Celebration</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#coordinators">Coordinators</a>
+        <a href="#rules">Rules</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <div class="banner" id="home">
+        <h2>Welcome to Our College Fest!</h2>
+        <p>Join us for two days of fun, talent, and innovation.</p>
+        <p>📅 November 20–21, 2026</p>
+        <a href="#register" class="btn">Register Now</a>
+    </div>
+
+    <section id="events">
+        <h2>Our Events</h2>
+
+        <div class="events">
+            <div class="card">
+                <h3>💻 Technical Events</h3>
+                <p>Paper Presentation</p>
+                <p>Coding Competition</p>
+                <p>Project Expo</p>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Cultural Events</h3>
+                <p>Singing Competition</p>
+                <p>Dance Competition</p>
+                <p>Drama and Fashion Show</p>
+            </div>
+
+            <div class="card">
+                <h3>🛠️ Workshops</h3>
+                <p>Web Development</p>
+                <p>Artificial Intelligence</p>
+                <p>Robotics Workshop</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Inauguration</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Technical Events</td>
+                <td>Computer Lab</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Workshops</td>
+                <td>Seminar Hall</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Cultural Programs</td>
+                <td>Open Stage</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="coordinators">
+        <h2>Event Coordinators</h2>
+
+        <div class="events">
+            <div class="card">
+                <h3>Technical Coordinator</h3>
+                <p>Name: Rahul</p>
+                <p>Contact: 9876543210</p>
+            </div>
+
+            <div class="card">
+                <h3>Cultural Coordinator</h3>
+                <p>Name: Priya</p>
+                <p>Contact: 9876501234</p>
+            </div>
+
+            <div class="card">
+                <h3>Workshop Coordinator</h3>
+                <p>Name: Arjun</p>
+                <p>Contact: 9876512345</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules">
+        <h2>Festival Rules</h2>
+
+        <div class="card" style="max-width: 700px; margin: auto;">
+            <p>1. Students must carry their college ID cards.</p>
+            <p>2. Register before participating in an event.</p>
+            <p>3. Follow the instructions of coordinators.</p>
+            <p>4. Maintain discipline and respect others.</p>
+            <p>5. Report to the venue on time.</p>
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Student Registration</h2>
+
+        <form id="registrationForm">
+            <input type="text" id="name"
+                placeholder="Full Name" required>
+
+            <input type="email" id="email"
+                placeholder="Email Address" required>
+
+            <input type="text" id="college"
+                placeholder="College Name" required>
+
+            <select id="event" required>
+                <option value="">Select an Event</option>
+                <option>Paper Presentation</option>
+                <option>Coding Competition</option>
+                <option>Project Expo</option>
+                <option>Singing Competition</option>
+                <option>Dance Competition</option>
+                <option>Web Development Workshop</option>
+                <option>AI Workshop</option>
+            </select>
+
+            <button type="submit" class="btn">
+                Submit Registration
+            </button>
+        </form>
+
+        <p id="message" style="margin-top: 20px;"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 College Fest Management</p>
+        <p>Made with ❤️ by Students</p>
+    </footer>
+
+    <script>
+        document.getElementById("registrationForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const selectedEvent =
+                    document.getElementById("event").value;
+
+                document.getElementById("message").textContent =
+                    "Thank you, " + name +
+                    "! Your registration for " +
+                    selectedEvent + " has been received.";
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
